@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House</title>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-assets>
+<img id="brick" src="assets/Brick.png">
+<img id="stone" src="assets/cobblestone.jpeg">
+<img id="roof" src="assets/roof.png">
+<img id="stars" src="assets/stars.jpg">
+<img id="window" src="assets/window.jpeg">
+    </a-assets>
+    <a-scene>
+   <a-box
+position="1 1 -14"
+width="8"
+height="4"
+scale=""
+depth=".3"
+side="double"
+src="#brick"
+shadow>
+<a-box
+    position="-2.65 -.5 8.1"
+    height="3"
+    depth=".3"
+    width="3"
+    src="#brick"
+    shadow></a-box>
+    <a-box
+    position="2.65 -.5 8.1"
+    height="3"
+    depth=".3"
+    width="3"
+    src="#brick"
+    shadow></a-box>
+    <a-box
+    position="2.08 1.5 8.1"
+    height="1"
+    depth=".3"
+    scale="1.038 1 1"
+    width="4"
+    src="#window"
+    repeat="1 1"
+    shadow></a-box>
+    <a-box
+    position="-2.08 1.5 8.1"
+    height="1"
+    depth=".3"
+    scale="1.038 1 1"
+    width="4"
+    src="#window"
+    repeat="1 1"
+    shadow></a-box>
+    <a-box
+    position="0 1.5 8.1"
+    height="1"
+    depth=".3"
+    scale="1.038 1 1"
+    width="1"
+    src="#brick"
+    repeat="1 1"
+    side="double"
+    shadow></a-box>
+<a-box
+position="4 0 4"
+width="8"
+height="4"
+rotation="0 90 180"
+scale=""
+depth=".3"
+side="double"
+src="#brick"
+shadow></a-box>
+<a-box
+position="-4 0 4"
+width="8"
+height="4"
+rotation="0 -90 180"
+scale=""
+depth=".3"
+side="double"
+src="#brick"
+shadow></a-box>
+
+<a-triangle
+    position="0 3 8.2"
+    scale="8.3 2 1"
+    src="#roof"
+    side="double"
+    shadow>
+</a-triangle>
+<a-triangle
+    position="0 3 0"
+    scale="8.3 2 1"
+    src="#roof"
+    side="double"
+    shadow>
+</a-triangle>
+<a-box
+position="-2.1 2.9 4"
+width="8.3"
+height="4.6"
+rotation="-65 -90 180"
+scale=""
+depth=".3"
+side="double"
+src="#roof"
+shadow></a-box>
+<a-box
+position="2.1 2.9 4"
+width="8.3"
+height="4.6"
+rotation="65 -90 180"
+scale=""
+depth=".3"
+side="double"
+src="#roof"
+shadow></a-box>
+</a-box>
+  <a-plane
+width="17"
+rotation="90 0 0"
+position="1 -1.5 -9"
+scale="3 3 2"
+height="17"
+src="#stone"
+side="double"></a-plane>
+<a-sky
+src="#stars">
+</a-sky>
+
+</a-scene>
+</body>
+</html>
